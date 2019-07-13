@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/celula_restaurantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/foto_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/textview_nome_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restaurante Testes"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/textview_endereco_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rua dos Teste, 1234 - vila Teste- São Paulo"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/textview_horario_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aberto das 12:00 hs as 23:00hs de Seg. à Sabado."
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</FrameLayout>

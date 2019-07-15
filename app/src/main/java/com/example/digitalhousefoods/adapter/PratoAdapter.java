@@ -56,17 +56,20 @@ public class PratoAdapter extends RecyclerView.Adapter<PratoAdapter.ViewHolder> 
         private TextView pratoTextView;
         private ImageView imagemPratoImageView;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imagemPratoImageView = itemView.findViewById(R.id.prato_image_view_prato_recycler_id);
             pratoTextView = itemView.findViewById(R.id.nome_prato_recycler_id);
 
+
         }
 
         public void setupPrato(Prato prato) {
             pratoTextView.setText(prato.getNomePrato());
             imagemPratoImageView.setImageResource(prato.getFotoPrato());
+
 
         }
     }

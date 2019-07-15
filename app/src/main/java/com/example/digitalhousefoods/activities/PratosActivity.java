@@ -65,6 +65,7 @@ public class PratosActivity extends AppCompatActivity implements PratoListener {
         Bundle bundle = new Bundle();
         bundle.putString("PRATO", prato.getNomePrato());
         bundle.putInt("FOTO", prato.getFotoPrato());
+        bundle.putString("DESCRICAO", prato.getDescricaoPrato());
         intent.putExtras(bundle);
 
         startActivity(intent);

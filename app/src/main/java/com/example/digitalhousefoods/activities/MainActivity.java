@@ -289,9 +289,36 @@ public class MainActivity extends AppCompatActivity implements RestaurantesListe
         restaurante1.getListaPratos().add(prato17);
         restaurante1.getListaPratos().add(prato18);
         restaurante1.getListaPratos().add(prato27);
-        restaurante1.getListaPratos().add(prato28);
-        restaurante1.getListaPratos().add(prato3);
+        restaurante1.getListaPratos().add(prato38);
+        restaurante1.getListaPratos().add(prato33);
         restaurante1.getListaPratos().add(prato5);
+
+        restaurante2.getListaPratos().add(prato7);
+        restaurante2.getListaPratos().add(prato8);
+        restaurante2.getListaPratos().add(prato17);
+        restaurante2.getListaPratos().add(prato18);
+        restaurante2.getListaPratos().add(prato27);
+        restaurante2.getListaPratos().add(prato38);
+        restaurante2.getListaPratos().add(prato33);
+        restaurante2.getListaPratos().add(prato5);
+
+        restaurante3.getListaPratos().add(prato7);
+        restaurante3.getListaPratos().add(prato8);
+        restaurante3.getListaPratos().add(prato17);
+        restaurante3.getListaPratos().add(prato18);
+        restaurante3.getListaPratos().add(prato27);
+        restaurante3.getListaPratos().add(prato38);
+        restaurante3.getListaPratos().add(prato33);
+        restaurante3.getListaPratos().add(prato5);
+
+        restaurante4.getListaPratos().add(prato7);
+        restaurante4.getListaPratos().add(prato8);
+        restaurante4.getListaPratos().add(prato17);
+        restaurante4.getListaPratos().add(prato18);
+        restaurante4.getListaPratos().add(prato27);
+        restaurante4.getListaPratos().add(prato38);
+        restaurante4.getListaPratos().add(prato33);
+        restaurante4.getListaPratos().add(prato5);
 
 
 

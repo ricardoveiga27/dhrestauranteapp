@@ -24,11 +24,13 @@ public class DetalhePratoActivity extends AppCompatActivity {
                 String nomePrato = bundle.getString("PRATO");
                 int fotoPrato = bundle.getInt("FOTO");
 
+              //  Log.e("nome prato",nomePrato);
+
                 TextView nomePratoTextView = findViewById(R.id.nome_prato_recycler_id);
                 ImageView fotoPratoImageView = findViewById(R.id.prato_image_view_prato_recycler_id);
 
                 nomePratoTextView.setText(nomePrato);
-                fotoPratoImageView.setImageResource(fotoPrato);
+                //fotoPratoImageView.setImageResource(fotoPrato);
 
 
 

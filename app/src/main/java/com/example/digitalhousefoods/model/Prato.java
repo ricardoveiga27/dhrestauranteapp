@@ -1,17 +1,15 @@
 package com.example.digitalhousefoods.model;
 
-public class Pratos {
+import java.io.Serializable;
+
+public class Prato implements Serializable {
 
     private String nomePrato;
     private String descricaoPrato;
-    private String fotoPrato;
+    private int fotoPrato;
 
 
-    public Pratos(String nomePrato, String descricaoPrato, String fotoPrato) {
-        this.nomePrato = nomePrato;
-        this.descricaoPrato = descricaoPrato;
-        this.fotoPrato = fotoPrato;
-    }
+
 
     public String getNomePrato() {
         return nomePrato;
@@ -29,11 +27,11 @@ public class Pratos {
         this.descricaoPrato = descricaoPrato;
     }
 
-    public String getFotoPrato() {
+    public int getFotoPrato() {
         return fotoPrato;
     }
 
-    public void setFotoPrato(String fotoPrato) {
+    public void setFotoPrato(int fotoPrato) {
         this.fotoPrato = fotoPrato;
     }
 }

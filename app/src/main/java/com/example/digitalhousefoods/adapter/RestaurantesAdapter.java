@@ -11,16 +11,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.digitalhousefoods.R;
 import com.example.digitalhousefoods.interfaces.RestaurantesListener;
-import com.example.digitalhousefoods.model.Restaurantes;
+import com.example.digitalhousefoods.model.Restaurante;
 
 import java.util.List;
 
 public class RestaurantesAdapter extends RecyclerView.Adapter<RestaurantesAdapter.ViewHolder> {
 
-    private List<Restaurantes> listaRestaurantes;
+    private List<Restaurante> listaRestaurantes;
     private RestaurantesListener restaurantesListener;
 
-    public RestaurantesAdapter(List<Restaurantes> listaRestaurantes, RestaurantesListener restaurantesListener) {
+    public RestaurantesAdapter(List<Restaurante> listaRestaurantes, RestaurantesListener restaurantesListener) {
         this.listaRestaurantes = listaRestaurantes;
         this.restaurantesListener = restaurantesListener;
     }
@@ -36,13 +36,13 @@ public class RestaurantesAdapter extends RecyclerView.Adapter<RestaurantesAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        final Restaurantes restaurantes = listaRestaurantes.get(i);
-        viewHolder.setupRestaurantes(restaurantes);
+        final Restaurante restaurante = listaRestaurantes.get(i);
+        viewHolder.setupRestaurantes(restaurante);
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                restaurantesListener.onRestauranteClicado(restaurantes);
+                restaurantesListener.onRestauranteClicado(restaurante);
             }
         });
     }
@@ -68,11 +68,11 @@ public class RestaurantesAdapter extends RecyclerView.Adapter<RestaurantesAdapte
             horarioFuncionamentoTextView = itemView.findViewById(R.id.textview_horario_restaurante);
         }
 
-        public void setupRestaurantes(Restaurantes restaurantes){
-            restaurantesImageView.setImageDrawable(restaurantesImageView.getDrawable());
-            nomeRestauranteTextView.setText(nomeRestauranteTextView.getText());
-            enderecoTextView.setText(enderecoTextView.getText());
-            horarioFuncionamentoTextView.setText(horarioFuncionamentoTextView.getText());
+        public void setupRestaurantes(Restaurante restaurante){
+            restaurantesImageView.setImageResource(restaurante.getFoto());
+            nomeRestauranteTextView.setText(restaurante.getNomeRestaurante());
+            enderecoTextView.setText(restaurante.getEndereco());
+            horarioFuncionamentoTextView.setText(restaurante.getHorarioFuncionamento());
         }
 
 

@@ -8,107 +8,105 @@
     android:background="@drawable/degrade_splash"
     tools:context=".activities.RegisterActivity">
 
-    <android.support.design.card.MaterialCardView
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:cardCornerRadius="25dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:id="@+id/materialCardView">
+        android:layout_margin="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
 
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="0dp">
+                android:layout_marginTop="8dp"
+                android:hint="Nome">
 
-                <android.support.design.widget.TextInputEditText
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:layout_conversion_absoluteHeight="0dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_conversion_absoluteWidth="0dp" />
-            </android.support.design.widget.TextInputLayout>
+                    android:id="@+id/edit_text_nome"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="E-mail"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="0dp">
+                android:layout_marginTop="8dp"
+                android:hint="E-mail">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_email"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    tools:layout_conversion_absoluteHeight="0dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_conversion_absoluteWidth="0dp" />
-            </android.support.design.widget.TextInputLayout>
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Senha"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="0dp">
-
-                <android.support.design.widget.TextInputEditText
+                android:layout_marginTop="8dp"
+                android:hint="Senha">
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_password"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberPassword"
-                    tools:layout_conversion_absoluteHeight="0dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_conversion_absoluteWidth="0dp" />
-            </android.support.design.widget.TextInputLayout>
+                    android:inputType="numberPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="wrap_content"
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirme sua senha"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_conversion_absoluteWidth="0dp">
-
-                <android.support.design.widget.TextInputEditText
+                android:layout_marginTop="8dp"
+                android:hint="Confirme sua senha">
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_text_confirm_password"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberPassword"
-                    tools:layout_conversion_absoluteHeight="0dp"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_conversion_absoluteWidth="0dp" />
-            </android.support.design.widget.TextInputLayout>
+                    android:inputType="numberPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
+            <Button
+                android:id="@+id/button_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="REGISTRAR"
+                android:textColor="@color/branco"
+                android:background="@color/secondaryDarkColor"/>
 
-    </android.support.design.card.MaterialCardView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:src="@drawable/ic_plus"
-        android:id="@+id/fab_register"
-        android:layout_margin="16dp"/>
+        </LinearLayout>
 
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 

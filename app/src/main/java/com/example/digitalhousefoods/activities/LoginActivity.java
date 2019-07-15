@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,17 +15,33 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputEditText emailEditText;
     private TextInputEditText senhaEditText;
     private Button loginButton;
-    private TextView registerButton;
+    private Button registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+//        Intent intent = getIntent();
+//        if (intent != null) {
+//            Bundle bundle = intent.getExtras();
+//            if (bundle != null) {
+//                String emailDigitado = bundle.getString("EMAIL");
+//                String senhaDigitada = bundle.getString("PASS");
+//
+//                TextInputEditText emailEditText = findViewById(R.id.edit_text_email);
+//                TextInputEditText passWordEditText = findViewById(R.id.edit_text_password);
+//
+//                emailEditText.setText(emailDigitado);
+//                passWordEditText.setText(senhaDigitada);
+//            }
+//        }
+
         emailEditText = findViewById(R.id.login_email_edit_text);
         senhaEditText = findViewById(R.id.login_senha_edit_text);
         loginButton = findViewById(R.id.login_button);
-        registerButton = findViewById(R.id.login_register_button);
+        registerButton = findViewById(R.id.registrar_button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,23 +60,16 @@ public class LoginActivity extends AppCompatActivity {
 
     private void logar(){
 
-        String emailDigitado = emailEditText.getEditableText().toString();
-        String senhaDigitada = senhaEditText.getEditableText().toString();
+//        final String emailDigitado = emailEditText.getEditableText().toString();
+//        final String senhaDigitada = senhaEditText.getEditableText().toString();
+//
+////        emailEditText.setError(null);
+////        senhaEditText.setError(null);
+//
+//        if(emailDigitado.equals("ricardo@teste.com.br") && senhaDigitada.equals("123456")){
 
-        emailEditText.setError(null);
-        senhaEditText.setError(null);
-
-//        if(emailDigitado.equals("fabio@digitalhouse.com") && senhaDigitada.equals("123456")){
-
-        Intent intent = new Intent(this, MainActivity.class);
-
-        Bundle bundle = new Bundle();
-
-        bundle.putString("EMAIL", emailDigitado);
-
-        intent.putExtras(bundle);
-
-        startActivity(intent);
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
 
 //        } else {
 //            emailEditText.setError("Usuário e/ou senha incorreto(s)");

@@ -1,8 +1,8 @@
 package com.example.digitalhousefoods.interfaces;
 
-import com.example.digitalhousefoods.model.Restaurantes;
+import com.example.digitalhousefoods.model.Restaurante;
 
 public interface RestaurantesListener {
 
-    public void onRestauranteClicado(Restaurantes restaurantes);
+    public void onRestauranteClicado(Restaurante restaurante);
 }

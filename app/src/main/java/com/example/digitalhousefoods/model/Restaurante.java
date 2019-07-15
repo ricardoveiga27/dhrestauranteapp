@@ -4,14 +4,14 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Restaurantes implements Serializable {
+public class Restaurante implements Serializable {
 
     private String nomeRestaurante;
     private String endereco;
     private String horarioFuncionamento;
-    private String foto;
+    private int foto;
 
-    private List<Pratos> listaPratos = new ArrayList<>();
+    private List<Prato> listaPratos = new ArrayList<>();
 
 
     public String getNomeRestaurante() {
@@ -38,19 +38,19 @@ public class Restaurantes implements Serializable {
         this.horarioFuncionamento = horarioFuncionamento;
     }
 
-    public String getFoto() {
+    public int getFoto() {
         return foto;
     }
 
-    public void setFoto(String foto) {
+    public void setFoto(int foto) {
         this.foto = foto;
     }
 
-    public List<Pratos> getListaPratos() {
+    public List<Prato> getListaPratos() {
         return listaPratos;
     }
 
-    public void setListaPratos(List<Pratos> listaPratos) {
+    public void setListaPratos(List<Prato> listaPratos) {
         this.listaPratos = listaPratos;
     }
 }

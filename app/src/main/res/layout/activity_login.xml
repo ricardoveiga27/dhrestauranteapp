@@ -28,6 +28,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email">
@@ -40,8 +41,10 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:hint="Senha">
                 <com.google.android.material.textfield.TextInputEditText
 
@@ -54,18 +57,44 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Login"
                 android:backgroundTint="@color/secondaryDarkColor"
                 android:id="@+id/login_button"
                 android:textColor="@color/primaryTextColor"/>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="end"
-                android:textStyle="bold"
-                android:text="Não tem conta? Registre-se agora"
-                android:id="@+id/login_register_button"/>
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/primaryDarkColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="ou"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@color/primaryDarkColor"/>
+
+
+
+
+            </LinearLayout>
 
             <Button
                 android:layout_width="match_parent"
@@ -76,6 +105,15 @@
                 android:textColor="@color/primaryTextColor"
                 android:layout_marginTop="32dp"
                 android:text="Login com Facebook"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="registrar"
+                android:backgroundTint="@color/secondaryDarkColor"
+                android:id="@+id/registrar_button"
+                android:textColor="@color/primaryTextColor"/>
 
         </LinearLayout>
 
